@@ -11,3 +11,4 @@ all component are connected to this main file
  
 
 to insert styling use className="" inside <>
+
