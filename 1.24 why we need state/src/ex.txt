@@ -1,0 +1,7 @@
+the function does execute but doesnt reflect in title as how reacts compile jsx code
+you can notice most of our function are called as <> in html code
+when reacts evaluates jsx code it calls these component functions in<expemnseItem> for example
+it keeps on evaluating jsc component codes and their respective function until no functions are left
+the first func called in render </App> component
+rect only dpes all the above once ie when the app is rendered but doesnt repeat the process 
+so to update we must kmow what state is
