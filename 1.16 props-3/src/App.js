@@ -1,5 +1,7 @@
 import One from "./components/1addParameters";
+
 import Two from "./components/Two";
+
 function App() {
   const object_name = [
     {
