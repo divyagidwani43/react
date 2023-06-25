@@ -1,4 +1,6 @@
 when we add parameters injava s we can call the same function but with diff values same with props in react
 
 
+
+
 props are used to pass data from one componeents to other
