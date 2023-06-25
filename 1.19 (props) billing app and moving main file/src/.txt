@@ -1,0 +1,2 @@
+now we only need to call one function in app js 
+the function explaining what it does is moved to expenses js in components folder as component
