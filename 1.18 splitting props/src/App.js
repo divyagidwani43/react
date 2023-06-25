@@ -1,7 +1,6 @@
 import ExpenseItem from "./components/1ExpenseItem";
 import ExpenseDate from "./components/ExpenseDate";
 import './components/ExpenseItem.css';
-
 function App() {
   const expenses = [
     {
