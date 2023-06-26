@@ -1,0 +1,7 @@
+the input is still not saved.... to save input we need to add listener
+onChange will add data as it is entered and execute it as function (it is pointed to) says so
+event describes the event that occurs 
+when we log this event to console we get data we get a field called target that holds a value property 
+that value property holds the value of the input now we can use the value we entered as
+event.target.value
+log it and see 
