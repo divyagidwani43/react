@@ -1,0 +1,32 @@
+we know how to move data from one js file to other using props but 
+props can only be used when the main data is in main file parent file
+i.e app has the main array of expenses where we call expenses that has expense item function both using props
+
+to move it the other way ie from child node to parent we use a different approach
+we need data to move from new expense that has all saved input to appjs to display it in expense tracker
+
+we are listening to user input in expenseform.js as saving it titleAdded and other variable
+using useState 
+we log function that execute onChange or as we enter data those function give us the event data
+that event data displays the data at target in value variable that is used to save the data we input in a variable declared using useState
+
+react sees we added omChange as event listener to an input and executes it
+
+we are till here using predefined function like onChange onClick that generate events 
+we can also create our own function that will genearate an event of the name of out choice with any name
+it is adviced to create with on in start this function we can define to allow us to pass data from parent to child and call function in child 
+we can pass data to that func using props and tranfer data to parent from child
+
+to reach app we need to get to newExpense
+expenseform --> newExpense --> app
+we can't skip any component in between data must be passed step by step
+
+so we add a prop to newExpense where we call expenseform ------>newExpense
+
+
+
+
+
+deine a custom function (onChange type) in the parent file point it to function that defines what to do with data
+define props in child file and props.toCustomFunction(dataFunction) dataFunction is the funtion that holds the data we want to pass
+pass that data as parameter and it reaches the parent file gets to the function 
