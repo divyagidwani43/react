@@ -1,0 +1,25 @@
+let titleChange = (event) => {
+  titleAdded(event.target.value);                   //this is the value we enter its the location where out input value is stored
+  };
+const amount = (event) => {
+    amountAdded(event.target.value);
+  };
+const Date = (event) => {
+  DateAdded(event.target.value);
+  };
+
+
+instead of above 3 we use
+
+
+const any_name= (first,second)=>{
+   if (first ==='title') titleAdded(second)
+   else if (first ==='amount') amountAdded(second)
+   else DateAdded(second) 
+  }
+
+
+call function by
+
+
+onChange={(event)=>any_name('title',event.target.value)}
