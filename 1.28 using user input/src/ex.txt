@@ -1,0 +1,2 @@
+now that we can store the input we need state function to store it 
+event.arget.value always give a string so we save defau;t value ''
