@@ -1,0 +1,22 @@
+the input is still not saved to save input we need to add listener
+
+const [userInput,AddUserInput]=useState({
+    amountAdded :'',
+    DateAdded : ''
+  })
+using this we do not save any previous state of the amount and DateAdde
+
+  const amount_date = (event) => {AddUserInput({
+    ...userInput
+    ,amountAdded:event.target.value
+calling them like this also is not preffered as the value of amount added depends on userInput so it depends on previous values
+which makes current value vulnerable
+keep amountAdded and DateAdded as diff in above functions or thy may generate error
+
+if your state update depends on previous state use 
+  const enteredTitle =(event) =>{
+    AddUserInput( (prevState)=>{
+      return{  ...prevState,
+        titleAdded:event.target.value
+      }})}
+
