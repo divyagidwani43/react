@@ -1,0 +1,13 @@
+we can not imput or have user input for expense tracking
+so we ad one folder for input == newExpenses
+<form> lets user input date
+
+<input type="date" min="2019-01-01" max="2022-12-31" />
+min max set to provide open close brack dates
+
+
+        <input type="number" min="0.01" step="0.01" />
+step is clicking on arrow to increase decrease amount that will skip 0.1 up or down        
+        
+        <label>Amount</label>
+label labels the input box
