@@ -1,5 +1,4 @@
 import React from "react";
-
 import Product from "./product";
 import "./index.css";
 
