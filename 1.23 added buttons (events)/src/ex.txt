@@ -1,0 +1,21 @@
+TILL HERE we can only build static applications
+where the state never changes, i.e output exactly the same.
+You want to have applications which are interactive, so that you can React to clicks by the user
+and to data being entered by the user and which are reactive so that the application
+also changes when certain things happen.
+SO HERE WE WILL SEE EVENTS i.e how to handle clicks and all
+so we will see how to reach target state and control whats visible pn screen
+
+
+      <button>what_you_want_printed</button>
+will add a button
+
+      <button onclick=>what_you_want_printed</button>
+onclick will execute a function it is pointed to when the button is clicked
+
+onclick is just a listener we add here the listeners can be added using on_theFunctionWeWant major listener start with on
+
+ONE WAY onclick={  () => {} }
+is to declare one line function and then button will do a told by function
+
+you can add function like onclick to any <> eg div h2 etc as long as they supportt it 
