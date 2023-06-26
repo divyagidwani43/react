@@ -1,0 +1,24 @@
+the add expense button as such doesn't do anything 
+it just reloads the form which is default behavior of react as we click on that button it send a req to server to do this
+so to prevent that we     const any_name_defining_submit = (event)=>{
+                             event.preventDefault();
+and call it in            <form onSubmit = {any_name_defining_submit}>
+
+we can also call it in           <button type="submit">Add Expense</button>
+by using onClick but it would not stop default behavior of form in react to reload the form
+
+
+
+  const any_name_for_func_defining_submit = (event)=>{
+    event.preventDefault();                               //built in javas functin to stop default behavour of reload the page
+    const any_name_2 ={
+      title_variable_name_any : enteredTitle,
+      amount_var :enteredAmount,
+      date_var :new Date(enteredDate)
+    }
+    console.log(any_name_2)
+  }
+
+
+
+<form onSubmit = {any_name_for_func_defining_submit}>
