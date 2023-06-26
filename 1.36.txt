@@ -1,0 +1,14 @@
+we want to pass data from new expense to expense to add it in tracker but there
+is no sych connection to directly pass the data so to pass data we need to 
+pass data through app.js as it is connected to both
+
+new expense ----(lifting_state_up)---->app.js----(using_props)---->expenses
+
+
+                    app.js
+                      |
+            __________|___________
+            |                    |
+        new expense          expenses
+
+        

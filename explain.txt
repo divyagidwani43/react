@@ -1,5 +1,4 @@
-<a></a> can be <a />
-
+css file import needs .css in end but .js dont
 
 it is seen as good practise to divide a major app to components while each component has its own function an deach
 component has a different file
@@ -12,9 +11,7 @@ function must always start from cap letter
 there is one main file here its app.js which is connected to html file
 all component are connected to this main file
 
-
-to insert styling use className="" inside <>
-
 if we open insepect on our doc we will see all our function in diff format (not jsx) in sources 
 
-props are used to pass data from one componeents to other
+props are used to pass data from one componeents to other from up to down only
+to pass data up to app main file we use lifting state

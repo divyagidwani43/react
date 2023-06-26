@@ -21,14 +21,14 @@ const ExpenseItem = (props) => {
   const [price, now] = useState(props.amount);
   function change() {
     const b = Number(prompt("enter discount percent "));
-    now(price - ((b/100) * price));
+    now(price - ((b / 100) * price));
   }
   return (
     <Card className="expense-item">
       <ExpenseDate date={props.date} />
       <div className="expense-item__description">
         <h2>{any1}</h2>
-        {/*any1 is props.title */}
+        {/*any1 is props.title and it will change value to any2 when any 2 is called by calling change title function*/}
         <div className="expense-item__price">${price}</div>
       </div>
       <button onClick={Click}>change title</button>

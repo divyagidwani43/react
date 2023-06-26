@@ -2,3 +2,7 @@
 {}java variabkes and code inside these
 ./ one folder up
 ../ two folder up
+we can export function a( ) 
+and const a = () => {} as well as 
+css file import needs .css in end but .js dont while import
+to insert styling use className="" inside <>
