@@ -15,7 +15,19 @@ onclick will execute a function it is pointed to when the button is clicked
 
 onclick is just a listener we add here the listeners can be added using on_theFunctionWeWant major listener start with on
 
-ONE WAY onclick={  () => {} }
+WAY 
+onclick={  () => {} } 
+onClick = {function(){ }}
+onClick={function_name_defined}
 is to declare one line function and then button will do a told by function
 
 you can add function like onclick to any <> eg div h2 etc as long as they supportt it 
+
+
+on the html buttons almost all (div,button ,h2 etc) we have access to all native DOM events
+these defalut events like onCLick start with on and it should be pointed to function that will be executed when that event occurs
+we just point to it not execcute it if we execute it as well ie add () in laste javas will execute it while execute the piece of code
+its written near (the button or event may or may not have occured) pointing makes sure the function is only executed when the event 
+occurs
+
+it is adviced to end pointed function name with handler 

@@ -5,3 +5,16 @@ when we log this event to console we get data we get a field called target that 
 that value property holds the value of the input now we can use the value we entered as
 event.target.value
 log it and see 
+
+
+when we add a listener and process to javas we get an event object as default 
+that same object we get here as well when we add a listener like onChange react gives a event object
+when we log event to console after passsing it as parameter we get obj on log that has target as property that holds value
+attribute that has out input value
+
+
+
+function four (event){
+  console.log(event)
+}
+<input onChange = {four}></input>

@@ -1,27 +1,30 @@
 to re evalute the title we need to trigger react to notice a variable change otherwise it will ignore it
-the funtion executes but the component where we deployed the funtion doesnt re executes
-This ExpenseItem component function currently is not called a second time after the initial rendering
-just because a click occurred or because a variable changed
-does not trigger this component function to run again.So to tell React that it should run it again,
-we need to import something from the React library.
-after declaration we call the function and that needs to be done inside the component function not ouside or inside nested fnctiion or anywhere else
 
+nomal varibales such as let changing its value cant cause react to re evalute the code again and display updated value
 
-so we saw on adding let title = props.title;
-  function Click(){
-    title = 'hi';
-    console.log('done')
-  }
-  and clicking on button the title doesnt change cause the react does not execute the code or the funtion again cause a variable was
-  changed dur tp a click so to tell react to re do the funtion we use useState
-  the above does executecheck the log
 
 import React from "react";
 is importing react 
 import React ,{ useState} from "react";
-imports the state function or  provided by react library
-we can import other function as well or specific defined thing from react library in {}
+imports the state function or  provided by react library. we can import other function as well or specific defined thing from react library in {}
 
 useState() must be called inside function ExpenseItem ie main function (not in nested)
+
+useState is a react hook and there are more hooks as well most start with use
+
+useState defines a special variable and must have a default value 
+
+useState returns an aray [intialValue, updatedValue] 
+
+we use destructring to log those values to array of variable names of our choice
+
+const [varibale_1 , variable_2] = useState(default_value)
+
+variable_2 must be declared like variable_2(valueWanted) inside a function which when called will set the value
+no function = no value in variable_2
+variable_2(valueWanted)=only way
+variable_2=valueWanted will error as variable_2 and varibale_1 have const in start
+varibale_1 holds the value for default_value and when variable_2 is called or executed it updates its value and equates to variable_2
+
 state is seperated on per component basis i.e clicking on change title of one expense item doesnt chnage for other 
 i.e only one component is changed 

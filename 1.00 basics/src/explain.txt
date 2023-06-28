@@ -1,5 +1,7 @@
-<a></a> can be <a />
+JXS code stands for javascript in html
 
+
+<a></a> can be <a />
 
 it is seen as good practise to divide a major app to components while each component has its own function an deach component has a different file
 they can be connected using import expoert

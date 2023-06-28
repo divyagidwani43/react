@@ -1,7 +1,10 @@
-the function does execute but doesnt reflect in title as how reacts compile jsx code
-you can notice most of our function are called as <> in html code
-when reacts evaluates jsx code it calls these component functions in<expemnseItem> for example
-it keeps on evaluating jsc component codes and their respective function until no functions are left
-the first func called in render </App> component
-rect only dpes all the above once ie when the app is rendered but doesnt repeat the process 
-so to update we must kmow what state is
+whenever we click the button the pointed functin is executed but the title still doesn't change
+the function does get triggered check using console log function
+
+the component <expenseItem> as whole is just a component that also returns jsx code 
+a function must be called 
+but we never actually call these function but just use them as jsx code like <expenseItem> but it is a function defined in expenses
+by using function as jsx code we make react aware of our components ie calling <expenseItem> makes react aware of expenseItem function
+react evalutes the given jsx code returned then the jsx code their component function may return so almost all code is evaluated
+now on button click a variable value changes but the react doesnt evaluates the whole code pieces all over again so it goes undetected
+so to update in react and make react aware of update we use state function

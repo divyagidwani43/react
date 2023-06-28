@@ -6,17 +6,11 @@ import "./ExpenseItem.css";
 
 const ExpenseItem = (props) => {
   const [any1, any2] = useState(props.title);
-  {
-    /* any1 = the value inside() || any2 = the value we will set will be equated to value in ()after its called  */
-  }
+  /* any1 = the value inside() || any2 = the value we will set will be equated to value in ()after its called  */
   function Click() {
-    {
-      /*the click function changes title to updated when called */
-    }
+    /*the click function changes title to updated when called */
     any2("updated");
-    {
-      /*any2 must be called as a function */
-    }
+    /*any2 must be called as a function */
   }
   const [price, now] = useState(props.amount);
   function change() {
